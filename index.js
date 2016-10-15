@@ -16,7 +16,7 @@ module.exports = function(content ) {
 	if( query.rootPath ) {
 			
 		newContent = content.replace(
-			/url\(\s*?['"]?([^\s-!'"]*)["']?\s*?\)/g,
+			/url\(\s*?['"]?([^\s!'"]*)["']?\s*?\)/g,
 			"url(" + query.rootPath +"$1 )"
 		);
 	}
